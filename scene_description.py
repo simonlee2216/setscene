@@ -55,10 +55,4 @@ def generate_scene_description(image_path):
     short_captions = generate_short_captions(image_path, num_captions=3)  # Specify 3 captions
     expanded_description = expand_description(short_captions)
 
-    return expanded_description  # Return a single description
-
-if __name__ == "__main__":
-    # Test the scene description generation
-    imgfile = "test5.jpg"  # Replace with your image file
-    description = generate_scene_description(imgfile)
-    print("Generated Description:", description)
+    return expanded_description 
